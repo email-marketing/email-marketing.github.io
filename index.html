@@ -15,8 +15,8 @@
     <![endif]-->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   	<script src="js/jquery.slides.min.js"></script>
-  	<link rel="stylesheet" type="text/css" href="timer/css/timer.css">	
-	<script src="timer/timer.js"></script>
+  	<!--<link rel="stylesheet" type="text/css" href="timer/css/timer.css">	-->
+	<!--<script src="timer/timer.js"></script>-->
     <style>
     	#slides {
       	display:none;
@@ -108,10 +108,13 @@
 						<div class="form-wrap">
 							<form action="#" method="post" name="comment-form" id="comment-form">
 								<div class="float-left left">
-									<input name="name" type="text" placeholder="Имя" required="">
-									<input name="tel" type="tel" placeholder="Телефон" required="">
-									<input name="email" type="email" placeholder="Email" required="">
-									<input name="subject" type="hidden" value="Акция">
+									<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+									<input name="TITLE" type="hidden" value="email-marketing: Акция">
+									
+									<input name="NAME" type="text" placeholder="Имя" required="">
+									<input name="PHONE_OTHER" type="tel" placeholder="Телефон" required="">
+									<input name="EMAIL_OTHER" type="email" placeholder="Email" required="">
+									
 									<input type="submit" value="Узнать подробнее" class="css_btn_class">
 								</div>
 							</form>
@@ -259,13 +262,16 @@
 						<div class="form-wrap">
 							<form action="#" method="post" name="comment-form" id="comment-form">
 								<div class="float-left left">
-									<input name="name" type="text" placeholder="Имя" required="">
-									<input name="tel" type="tel" placeholder="Телефон" required="">
-									<input name="email" type="email" placeholder="Email" required="">
-									<input name="subject" type="hidden" value="Рекомендации">
+									<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+									<input name="TITLE" type="hidden" value="email-marketing: База данных">
+									
+									<input name="NAME" type="text" placeholder="Имя" required="">
+									<input name="PHONE_OTHER" type="tel" placeholder="Телефон" required="">
+									<input name="EMAIL_OTHER" type="email" placeholder="Email" required="">
+									
 									<input type="submit" value="Отправить" class="css_btn_class">
 								</div>
-								<textarea name="comment" placeholder="Комментарий"></textarea>
+								<textarea name="COMMENTS" placeholder="Комментарий"></textarea>
 							</form>
 						</div>
 					</div>
@@ -311,8 +317,11 @@
 					</div>
 					<div class="pb-right">
 						<form method="post" name="action_form" id="action_form">
-							<input name="email" type="email" placeholder="Введите свою почту" required="">
-							<input name="subject" type="hidden" value="БД 2">
+							<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+							<input name="TITLE" type="hidden" value="email-marketing: Рекомендации">
+							
+							<input name="EMAIL_OTHER" type="email" placeholder="Введите свою почту" required="">
+							
 							<input type="submit" value="Отправить" class="css_btn_class">
 						</form>
 					</div>
@@ -422,13 +431,16 @@
 						<div class="form-wrap">
 							<form action="#" method="post" name="comment-form" id="comment-form">
 								<div class="float-left left">
-									<input name="name" type="text" placeholder="Имя" required="">
-									<input name="tel" type="tel" placeholder="Телефон" required="">
-									<input name="email" type="email" placeholder="E-Mail" required="">
-									<input name="subject" type="hidden" value="Вопрос">
+									<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+									<input name="TITLE" type="hidden" value="email-marketing: Вопрос">
+									
+									<input name="NAME" type="text" placeholder="Имя" required="">
+									<input name="PHONE_OTHER" type="tel" placeholder="Телефон" required="">
+									<input name="EMAIL_OTHER" type="email" placeholder="E-Mail" required="">
+									
 									<input type="submit" value="Отправить" class="css_btn_class">
 								</div>
-								<textarea name="comment" placeholder="Комментарий"></textarea>
+								<textarea name="COMMENTS" placeholder="Комментарий"></textarea>
 							</form>
 						</div>
 					</div>
@@ -439,10 +451,13 @@
 		<h3>Закажите консультацию!</h3>
 			<div class="form">
 				<form action="#" method="post">
-					<input name='name' type='text' placeholder='Имя' required />
-					<input name='tel' type='text' placeholder='Телефон' required />
-					<input name='email' type='text' placeholder='Email' required />
-					<input name='subject' type='hidden' value='Заказ звонка' />
+					<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+					<input name="TITLE" type="hidden" value="email-marketing: Заказ звонка">
+					
+					<input name='NAME' type='text' placeholder='Имя' required />
+					<input name='PHONE_OTHER' type='text' placeholder='Телефон' required />
+					<input name='EMAIL_OTHER' type='text' placeholder='Email' required />
+					
 					<input type='submit' value='Заказать' class="css_btn_class"/>
 				</form>
 			</div>
@@ -451,9 +466,12 @@
 		<h3>Заполните данные</h3>
 			<div class="form">
 				<form action="#" method="post">
-					<input name='name' type='text' placeholder='Имя' required />
-					<input name='tel' type='text' placeholder='Телефон' required />
-					<input name='subject' type='hidden' value='Пакет' />
+					<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+					<input name="TITLE" type="hidden" value="email-marketing: Пакет">
+					
+					<input name='NAME' type='text' placeholder='Имя' required />
+					<input name='PHONE_OTHER' type='text' placeholder='Телефон' required />
+					
 					<input type='submit' value='Заказать' class="css_btn_class"/>
 				</form>
 			</div>
@@ -463,9 +481,12 @@
 		<h3>Заполните данные</h3>
 			<div class="form">
 				<form action="#" method="post">
-					<input name='name' type='text' placeholder='Имя' required />
-					<input name='tel' type='text' placeholder='Телефон' required />
-					<input name='subject' type='hidden' value='Пакет (Подробнее)' />
+					<input name="AUTH" type="hidden" value="54982cb0ab4abc0730552333c729475c">
+					<input name="TITLE" type="hidden" value="email-marketing: Пакет (Подробнее)">
+					
+					<input name='NAME' type='text' placeholder='Имя' required />
+					<input name='PHONE_OTHER' type='text' placeholder='Телефон' required />
+					
 					<input type='submit' value='Узнать подробнее' class="css_btn_class"/>
 				</form>
 			</div>

@@ -14,20 +14,39 @@ $(document).ready( function(){
 	    	$(".fb" + current_slide).show();
 	  });
 	});
+	
+	function showError() {
+		alert("Произошла ошибка, пожалуйста попробуйте позднее.");
+	}
 
 	$('form').on('submit', function(event){ 
 		event.preventDefault();
 		if ($(this).find('input[name=name]').val() != '' & $(this).find('input[name=tel]').val() != '') {
 		var form = $(this);
-		$.ajax('sendmessage.php', {
-			type:'POST',
-			cache:false,
+		$.ajax('https://email-marketing.bitrix24.ru/crm/configs/import/lead.php', {
+			type: 'POST',
+			cache: false,
 			data: form.serialize(),
-			success: function(result) {
-				if(result == "true") {
-					window.location.replace("success.html");
+			// success: function(result) {
+			// 	if (result == "true") 
+			// 		window.location.replace("success.html");
+			// },
+		
+			error: function(xhr, desc, err) {
+				try {
+					var result = JSON.parse(xhr.responseText.replace(/'/g, '"'));
+					if (result.error == "201") {
+						window.location.replace("success.html");
+					}
+					else {
+						showError();
+					}
 				}
-		}	
+				catch (error) {
+					showError();
+				}
+			}
+		
 		});
 		}
 	});
