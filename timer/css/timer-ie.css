@@ -1,0 +1,5 @@
+<style type="text/css">
+	#countbox{ margin: -7px auto; }
+	#countbox-days-text,#countbox-hours-text,#countbox-mins-text,#countbox-secs-text{margin: 85px 0 0 -87px;}
+	#countbox-days1 span, #countbox-days2 span, #countbox-hours1 span, #countbox-hours2 span, #countbox-mins1 span, #countbox-mins2 span, #countbox-secs1 span, #countbox-secs2 span {margin: -5px 0 0 -13px;}
+</style>
